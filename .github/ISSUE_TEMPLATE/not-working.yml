@@ -39,6 +39,3 @@ body:
       placeholder: "e.g., Raspberry Pi OS"
     validations:
       required: false
-    show_if:
-      field: os
-      value: "Other"
