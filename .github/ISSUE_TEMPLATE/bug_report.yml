@@ -1,12 +1,14 @@
 name: "Bug Report [new]"
 description: "Report an issue with the software."
 title: "[BUG] "
-labels: ["type:bug", "bug"]
+labels: 
+  - "type:bug"
+  - "bug"
 body:
   - type: markdown
     content: |
       Please provide the following information to help us diagnose the problem.
-  
+
   - type: input
     id: summary
     attributes:
@@ -73,7 +75,9 @@ body:
       label: "Logs"
       description: "Upload logs to help with debugging."
       multiple: true
-      filetypes: [".log", ".txt"]
+      filetypes: 
+        - ".log"
+        - ".txt"
   
   - type: file-upload
     id: screenshots
@@ -81,7 +85,11 @@ body:
       label: "Screenshots (optional)"
       description: "Upload screenshots that show the issue."
       multiple: true
-      filetypes: [".png", ".jpg", ".jpeg", ".gif"]
+      filetypes: 
+        - ".png"
+        - ".jpg"
+        - ".jpeg"
+        - ".gif"
       optional: true
   
   - type: file-upload
@@ -90,7 +98,9 @@ body:
       label: "Server Logs (optional)"
       description: "Upload server logs if available."
       multiple: true
-      filetypes: [".log", ".txt"]
+      filetypes: 
+        - ".log"
+        - ".txt"
       optional: true
   
   - type: textarea
