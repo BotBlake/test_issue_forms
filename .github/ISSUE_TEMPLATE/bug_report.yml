@@ -1,5 +1,5 @@
 name: Bug Report
-description: "File a bug report."
+description: File a bug report.
 title: "[BUG]: "
 labels:
   - "type:bug"
@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please fill out the following details to help us diagnose the problem.
+        Please provide the following details to help us diagnose the problem.
 
   - type: input
     id: summary
@@ -43,19 +43,6 @@ body:
         - "10.8"
         - "10.9"
         - "10.10"
-        - "Other"
-    validations:
-      required: true
-
-  - type: dropdown
-    id: kodi_version
-    attributes:
-      label: "Kodi Version"
-      description: "Select the Kodi version."
-      options:
-        - "19"
-        - "20"
-        - "21"
         - "Other"
     validations:
       required: true
