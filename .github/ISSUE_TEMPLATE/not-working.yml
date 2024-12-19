@@ -62,9 +62,8 @@ body:
       label: "Other Jellyfin Version"
       description: "Specify your Jellyfin version if 'Other' was selected."
       placeholder: "e.g., Unstable build"
-    conditional:
-      field: jellyfin_version
-      value: "Other"
+    validations:
+      required: false
 
   - type: dropdown
     id: kodi_version
@@ -85,3 +84,5 @@ body:
       label: "Other Kodi Version"
       description: "Specify your Kodi version if 'Other' was selected."
       placeholder: "e.g., Experimental build"
+    validations:
+      required: false
