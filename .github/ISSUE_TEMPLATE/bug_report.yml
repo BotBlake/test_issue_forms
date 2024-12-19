@@ -4,8 +4,9 @@ title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
-    content: |
-      Please provide the following information to help us diagnose the problem.
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
   - type: input
     id: contact
     attributes:
