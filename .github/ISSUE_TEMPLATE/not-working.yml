@@ -37,6 +37,8 @@ body:
       label: "Other Operating System"
       description: "Specify your operating system if 'Other' was selected."
       placeholder: "e.g., Raspberry Pi OS"
-    conditional:
+    validations:
+      required: false
+    show_if:
       field: os
       value: "Other"
