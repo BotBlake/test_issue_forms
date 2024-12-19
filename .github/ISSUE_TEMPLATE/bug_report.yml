@@ -1,9 +1,8 @@
-name: "Bug Report [new]"
-description: "Report an issue with the software."
-title: "[BUG] "
-labels: 
-  - "type:bug"
-  - "bug"
+---
+name: Bug Report [new]
+description: Report an issue with the software.
+title: [BUG]
+labels: [bug, triage]
 body:
   - type: markdown
     content: |
