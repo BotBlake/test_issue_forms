@@ -83,4 +83,3 @@ body:
       label: "Additional Information"
       description: "Provide any other relevant information."
       placeholder: "e.g., Additional context or setup details"
-      optional: true
