@@ -11,9 +11,9 @@ body:
   - type: input
     id: summary
     attributes:
-      label: "Summary"
-      description: "Provide a short description of the issue."
-      placeholder: "e.g., App crashes when opening a file"
+      label: Summary
+      description: Provide a short description of the issue.
+      placeholder: e.g., App crashes when opening a file
 
   - type: dropdown
     id: os
@@ -30,59 +30,3 @@ body:
         - "Other"
     validations:
       required: true
-
-  - type: input
-    id: os_other
-    attributes:
-      label: "Other Operating System"
-      description: "Specify your operating system if 'Other' was selected."
-      placeholder: "e.g., Raspberry Pi OS"
-    conditional:
-      field: os
-      value: "Other"
-
-  - type: dropdown
-    id: jellyfin_version
-    attributes:
-      label: "Jellyfin Server Version"
-      description: "Select the Jellyfin server version or specify another."
-      options:
-        - "10.7"
-        - "10.8"
-        - "10.9"
-        - "10.10"
-        - "Other"
-    validations:
-      required: true
-
-  - type: input
-    id: jellyfin_version_other
-    attributes:
-      label: "Other Jellyfin Version"
-      description: "Specify your Jellyfin version if 'Other' was selected."
-      placeholder: "e.g., Unstable build"
-    conditional:
-      field: jellyfin_version
-      value: "Other"
-
-  - type: dropdown
-    id: kodi_version
-    attributes:
-      label: "Kodi Version"
-      description: "Select the Kodi version or specify another."
-      options:
-        - "19"
-        - "20"
-        - "21"
-        - "Other"
-    validations:
-      required: true
-
-  - type: input
-    id: kodi_version_other
-    attributes:
-      label: "Other Kodi Version"
-      description: "Specify your Kodi version if 'Other' was selected."
-      placeholder: "e.g., Experimental build"
-    conditional:
-    
