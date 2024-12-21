@@ -1,8 +1,8 @@
-name: Bug Report
+name: Bug Report [for roku]
 description: Report a bug with the software.
 labels: bug
 body:
-- type: checkboxes
+  - type: checkboxes
     id: before-posting
     attributes:
       label: "This issue respects the following points:"
