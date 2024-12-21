@@ -1,6 +1,5 @@
-name: Bug Report [for roku]
-about: Report a bug with the software.
-title: ''
+name: Bug Report
+description: Report a bug with the software.
 labels: bug
 body:
   - type: markdown
@@ -72,21 +71,23 @@ body:
     attributes:
       label: Is the server local or remote?
       options:
+        - Please select...
         - local
         - remote
-      default: -1
+      default: 0
   - type: dropdown
     id: server_access_protocol
     attribute:
       label: Is the server connection HTTP or HTTPS?
       options:
+        - Please select...
         - http
         - https
-      default: -1
+      default: 0
 
 
   - type: textarea
     id: additional_context
-    attributes:
+    attribute:
       label: Additional Context
       description: Add any other context about the problem here.
