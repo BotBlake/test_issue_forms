@@ -1,0 +1,92 @@
+name: Bug Report [for roku]
+about: Report a bug with the software.
+title: ''
+labels: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Software Versions
+
+  - type: input
+    id: jellyfin_server_version
+    attributes:
+      label: Jellyfin Server Version
+      placeholder: "Enter the Jellyfin server version."
+
+  - type: input
+    id: roku_version
+    attributes:
+      label: Roku Client Version
+      placeholder: "Enter the Roku client version."
+
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Bug Description
+      description: Provide a clear and concise description of what the bug is.
+      placeholder: "When playing a movie via the «Resume from» context menu, I get the error message «xyz»"
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. Bug occurs
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: Provide a clear and concise description of what you expected to happen.
+      placeholder: "Describe what you expected to happen."
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Please paste any logs here.
+      placeholder: "Paste logs here, if available."
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem
+      placeholder: "Paste Screenshots here, if available."
+
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Connection Information
+        Provide information about your connection setup:
+
+  - type: dropdown
+    id: server_access_relativity
+    attributes:
+      label: Is the server local or remote?
+      options:
+        - local
+        - remote
+      default: -1
+  - type: dropdown
+    id: server_access_protocol
+    attribute:
+      label: Is the server connection HTTP or HTTPS?
+      options:
+        - http
+        - https
+      default: -1
+
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here.
