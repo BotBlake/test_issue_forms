@@ -1,5 +1,5 @@
 name: Bug Report [for web]
-description: 'You have noticed a general issue or regression, and would like to report it'
+description: You have noticed a general issue or regression, and would like to report it
 labels:
   - bug
 body:
@@ -41,9 +41,7 @@ body:
       description: Please paste any log errors.
       placeholder: |
         You can find the logs at...
-
       render: bash
-
 
   - type: textarea
     id: screenshot
