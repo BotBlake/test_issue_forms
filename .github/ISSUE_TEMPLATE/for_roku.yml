@@ -77,7 +77,7 @@ body:
       default: 0
   - type: dropdown
     id: server_access_protocol
-    attribute:
+    attributes:
       label: Is the server connection HTTP or HTTPS?
       options:
         - Please select...
@@ -88,6 +88,6 @@ body:
 
   - type: textarea
     id: additional_context
-    attribute:
+    attributes:
       label: Additional Context
       description: Add any other context about the problem here.
