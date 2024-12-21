@@ -1,7 +1,5 @@
-name: Bug Report
+name: Bug Report [for web]
 description: 'You have noticed a general issue or regression, and would like to report it'
-projects:
-  - jellyfin/jellyfin-web
 labels:
   - bug
 body:
